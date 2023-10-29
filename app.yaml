@@ -1,8 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
 handlers:
   - url: /
-    static_files: index.html
-    upload: index.html
+    static_files: www/index.html
+    upload: www/index.html
 
   - url: /(.*)
-    static_files: static/\1
-    upload: static/(.*)
+    static_files: www/\1
+    upload: www/(.*)
